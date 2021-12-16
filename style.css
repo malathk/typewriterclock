@@ -1,0 +1,82 @@
+body{
+    background-color: rgba(226, 226, 224, 0.945);
+    font-size: medium;
+    background-image: url('frost.jpeg');
+}
+
+#prompt{
+    font-size: medium;
+    position:absolute;
+    text-decoration: none;
+    border:0px;
+    padding:2%;
+    margin:2%;
+    font-size: xx-large;
+    font-variant: small-caps;
+    display:block;
+    background-color: rgba(136, 127, 255, 0.082);
+    border-radius: 60%;
+
+    
+}
+#prompt:hover{
+/* animation-name: blurry 1s; */
+filter: blur(50px);
+transition: ease 3s;
+}
+#prompt:not(:hover){
+  filter:blur(0px);
+  transition:ease 3s;
+}
+
+#container{
+  padding:20%;
+ 
+
+}
+
+p{
+  font-size: xx-large;
+  font-weight: lighter;
+  font-variant: small-caps;
+    text-overflow: clip;
+    overflow:scroll;
+    animation-name: brighter;
+
+    transition:ease 10s;
+}
+
+@keyframes brighter{
+    0%{
+      
+    
+    }
+  
+    100%{ 
+    backdrop-filter: brightness(20);
+      
+    }
+  }
+ 
+  @keyframes fadeOut{
+    0%{
+      opacity: 1;
+    
+    }
+    80%{
+      opacity: 1.9;
+      padding-left:100%;
+      background-color:white;
+      
+      
+    }
+    100%{ 
+      background-color:white;
+      filter:blur(80px);
+      display: none;
+      
+      opacity: 0;
+      
+    }
+  }
+ 
